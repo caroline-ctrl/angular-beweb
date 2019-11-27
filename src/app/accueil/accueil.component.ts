@@ -4,17 +4,15 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
-  styleUrls: ['./accueil.component.scss']
+  styleUrls: [ './accueil.component.scss' ]
 })
 export class AccueilComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {} // toujours écrire le code js dessous ngOnInit
 
-  }//toujours écrire le code js dessous ngOnInit
-
-  hide(){
+  hide() {
     $('#proot').slideToggle('slow');
   }
 }

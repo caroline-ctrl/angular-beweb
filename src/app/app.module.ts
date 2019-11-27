@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ContactComponent } from './contact/contact.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,13 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     LayoutModule,
     MatToolbarModule,
+    MatCardModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {}
