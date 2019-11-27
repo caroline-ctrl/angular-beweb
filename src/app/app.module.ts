@@ -11,17 +11,26 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { AccueilComponent } from './accueil/accueil.component';
+import {
+  AccueilComponent,
+  DialogBewebComponent
+} from './accueil/accueil.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
+  entryComponents: [ DialogBewebComponent ],
   declarations: [
     AppComponent,
     HomeComponent,
     AccueilComponent,
-    ContactComponent
+    ContactComponent,
+    DialogBewebComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -32,7 +41,10 @@ import { MatCardModule } from '@angular/material/card';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatInputModule,
+    MatDialogModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
